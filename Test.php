@@ -22,4 +22,10 @@ class Test
 
     }
 
+
+    public function oops()
+    {
+
+    }
+
 }
