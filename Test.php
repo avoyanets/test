@@ -24,5 +24,8 @@ class Test
     
     public function setTest() {
     }
+    
+    public function setTest1() {
+    }
 
 }
