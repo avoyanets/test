@@ -19,7 +19,8 @@ class Test
 
     public function getTest()
     {
-
+           echo 'Test';
+           echo 'Test2';
     }
 
 
