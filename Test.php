@@ -23,7 +23,7 @@ class Test
     }
     
     public function setTest() {
-        echo ;
+        echo 'Test';
     }
     
     public function setTest1() {
