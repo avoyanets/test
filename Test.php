@@ -29,8 +29,6 @@ class Test
     public function setTest1() {
         echo '12312';
         echo 'test';
-        1
-            2
     }
 
 }
