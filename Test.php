@@ -27,12 +27,7 @@ class Test
     }
     
     public function setTest1() {
-        echo '12312';
-         echo '12312';
-        echo 'test';
-        echo 'test@';
-    echo 'test@';
-            echo 'test@222';
+       
     }
 
 }
