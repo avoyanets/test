@@ -28,8 +28,7 @@ class Test
     }
     
     public function setTest1() {
-        echo 'Test';
-           echo 'Test2';
+     
     }
 
 }
