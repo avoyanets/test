@@ -24,6 +24,7 @@ class Test
     
     public function setTest() {
         echo 'Test';
+           echo 'Test2';
     }
     
     public function setTest1() {
