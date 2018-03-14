@@ -30,7 +30,7 @@ class Test
         echo '12312';
         echo 'test';
         echo 'test@';
- 
+    echo 'test@';
     }
 
 }
