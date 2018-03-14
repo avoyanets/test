@@ -25,7 +25,8 @@ class Test
 
     public function oops()
     {
-
+           echo 'Test';
+           echo 'Test2';
     }
 
 }
