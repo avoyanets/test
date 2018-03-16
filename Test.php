@@ -22,11 +22,22 @@ class Test
            echo 'Test';
            echo 'Test2';
     }
+ 
 
 
     public function oops()
     {
            echo 'Test';
+    }
+    
+    public function setTest() {
+        echo 'Test';
+           echo 'Test2';
+    }
+    
+    public function setTest1() {
+      echo 'Test';
+ 
            echo 'Test2';
     }
 
