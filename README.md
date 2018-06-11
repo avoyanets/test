@@ -103,7 +103,7 @@ Queue workers list:
 
 `vendor/`: contains composer dependencies.
 
-## Our Workflow
+## Workflow
 
 * When you start working on new task, create a new branch with the following format:
   `<prefix>/CE-<task number>`. Prefix may be one of:
@@ -116,5 +116,7 @@ Queue workers list:
 
 > Example: `feature/CE-3658`
 
+## Code Style
 
+[`psr-2`](https://www.php-fig.org/psr/psr-2/)
 
