@@ -77,23 +77,22 @@ Queue workers list:
 
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
 
-`config/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`config/`: contains all of your application's configuration files.
 
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
 
-`database/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`database/`:contains database migrations, model factories, and seeds.
 
-`public/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`public/`: the entry point for most requests, also houses assets (js, css, image).
 
-`resources/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`resources/`: houses all of your language files.
 
-`routes/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`storage/`:  contains various auxiliary files.
 
-`storage/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`tests/`: contains your automated tests.
 
-`tests/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
-
-`vendor/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`tests/`: contains your automated tests.
+`vendor/`: contains composer dependencies.
 
 
 ### Directory Structure
