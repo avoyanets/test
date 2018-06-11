@@ -103,5 +103,18 @@ Queue workers list:
 
 `vendor/`: contains composer dependencies.
 
+## Our Workflow
+
+* When you start working on new task, create a new branch with the following format:
+  `<prefix>/CE-<task number>`. Prefix may be one of:
+
+| prefix        | description                                                                                                      |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `feature`     | use it if you add some new functionality or improvement                                                                                                     |
+| `hotfix`      | some corrections into production (e.g. [`master`](https://github.com/captiv8io/captiv8io/tree/master) branch)         |
+
+
+> Example: `feature/CE-3658`
+
 
 
