@@ -41,7 +41,7 @@ $ composer install
 $ php artisan migrate
 $ php artisan db:seed
 ```
-# Supervisor config exmaple:
+### Supervisor config exmaple:
 
 ```shell
 $ [program:captiv8-1]
