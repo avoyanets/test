@@ -2,8 +2,14 @@
 
 ## Getting Started
 
-This repository contains the back-end part of the [Captiv8](https://captiv8.io/) interactive web
-application. It uses [`Laravel`](https://laravel.com/) as a main framework.
+ This repository contains the back-end part of the [Captiv8](https://captiv8.io/) interactive web
+application. It uses [`Laravel`](https://laravel.com/) as a main framework. 
+ * [`Composer`](https://getcomposer.org/) is a tool for dependency management.
+ * Redis as an advanced key-value store and Memcached as an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls.
+ * Laravel migrations are like version control for database, allowing easily modify and share the application's database schema.
+ * Laravel queues provide a unified API across a variety of different queue backends. Queues allow you to defer the processing of a time consuming task.
+ * Project uses Centrifugo as a real-time messaging server. Centrifugo runs as separate service and keeps persistent Websocket or SockJS connections from application clients browsers. When some event happens you can broadcast it to all interested clients using Centrifugo API.
+[Documentation](http://fzambia.gitbooks.io/centrifugal/content/) is a good start to get all details.
 
 ### Requirements
 
@@ -21,6 +27,9 @@ application. It uses [`Laravel`](https://laravel.com/) as a main framework.
 * Beanstalkd >= 1.10
 * Supervisor >= 3.2.0
 * Nginx >= 1.13.6
+* Redis
+* Memcached
+* ElasticSeach = 5.6.3
 
 
 ### How to install
@@ -31,7 +40,7 @@ $ composer install
 $ php artisan migrate
 $ php artisan db:seed
 ```
-Supervisor config exmaple:
+# Supervisor config exmaple:
 
 ```shell
 $ [program:captiv8-1]
@@ -61,18 +70,25 @@ Queue workers list:
 | `production`    | -   | Events for insights                          |
 
 
-Centrifugo is a real-time messaging server. Version 1.7.9 (https://github.com/centrifugal/centrifugo)
-### How to install
+### Directory Structure
 
-Releases available as single executable files – just [download latest release](https://github.com/centrifugal/centrifugo/releases) for your platform, unpack and run.
-
-If you are on MacOS:
-
-```
-brew tap centrifugal/centrifugo https://github.com/centrifugal/centrifugo
-brew install centrifugo
-```
-
-See official [Docker image](https://hub.docker.com/r/centrifugo/centrifugo/) and [Kubernetes Helm Chart](https://github.com/kubernetes/charts/tree/master/stable/centrifugo).
-
-There are also [packages for 64-bit Debian, Centos and Ubuntu](https://packagecloud.io/FZambia/centrifugo).
+* The Root Directory
+ * The app Directory - contains the core code
+  * The Console Directory
+  * The Events Directory
+  * The Exceptions Directory
+  * The Http Directory
+  * The Jobs Directory
+  * The Listeners Directory
+  * The Mail Directory
+  * The Notifications Directory
+  * The Providers Directory
+* The bootstrap Directory - contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files
+* The config Directory
+* The database Directory
+* The public Directory
+* The resources Directory
+* The routes Directory
+* The storage Directory
+* The tests Directory
+* The vendor Directory
