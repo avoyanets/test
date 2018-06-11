@@ -31,7 +31,7 @@ $ composer install
 $ php artisan migrate
 $ php artisan db:seed
 ```
-Supervisor config exmaple
+Supervisor config exmaple:
 
 ```shell
 $ [program:captiv8-1]
@@ -43,16 +43,25 @@ $ autorestart=true
 $ user=vagrant
 ```
 
+Queue workers list:
 
-
-| prefix        | description                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `feature`     | most popular prefix, use it if you add some new functionality                                                    |
-| `bug`         | pretty clear - branch for :bug:                                                                                  |
-| `fix`         | some little changes that correct or supplement functionality                                                     |
-| `hotfix`      | some corrections into production (e.g. [`master`](https://github.com/captiv8io/captiv8-frontend) branch)         |
-| `refactoring` | code changes under the hood, improvements to code structure, styles, performance, etc, but not the app behaviour |
-| `tools`       | some internal tools / libs like `prettier`, `mimic`                                                              |
+| queue prefix       | How to start   | Description          |
+| ---------- | ------------- | -------------------------- |
+| `ac_tokens_check`    | php artisan access_token:check | -                          |
+| `cio`     | - | `Features`                 |
+| `digest`      | - | `Bug Fixes`                |
+| `es`     | - | `Performance Improvements` |
+| `es_calc`    | php artisan discovery_es_index:send
+ 	{--ids= : inf user ids }
+	{--m= : mode }
+	{--new_data= : all inf users job mode } | -                          |
+| `fb_main`   | -   | -                          |
+| `g_c`     | -   | -                          |
+| `mp_default` | -   | -                          |
+| `mp_inf_update_main	`     | php artisan marketplace:start   | -                          |
+| `mp_post_update`    |  php artisan marketplace_post:start   | -                          |
+| `post_monitor`     | php artisan post_monitor:start   | -                          |
+| `production`    | -   | -                          |
 
 
 Centrifugo is a real-time messaging server. Version 1.7.9 (https://github.com/centrifugal/centrifugo)
