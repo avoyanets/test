@@ -81,26 +81,27 @@ Queue workers list:
 
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
 
-`database/`:contains database migrations, model factories, and seeds.
+`database/`: contains database migrations, model factories, and seeds.
 
 `public/`: the entry point for most requests, also houses assets (js, css, image).
 
 `resources/`: houses all of your language files.
 
-`storage/`:  contains various auxiliary files.
+`storage/`: contains various auxiliary files.
 
 `tests/`: contains your automated tests.
 
 `tests/`: contains your automated tests.
+
 `vendor/`: contains composer dependencies.
 
 
 ### Directory Structure
 
 * The Root Directory
- *  The App Directory
-  * The Console Directory
-  * The Events Directory
+ **  The App Directory
+  *** The Console Directory
+  **** The Events Directory
   * The Exceptions Directory
   * The Http Directory
   * The Jobs Directory
