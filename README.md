@@ -31,6 +31,20 @@ $ composer install
 $ php artisan migrate
 $ php artisan db:seed
 ```
+Supervisor config exmaple
+
+```shell
+$ [program:captiv8-1]
+$ command=php /home/c8prod/captiv8.io/artisan queue:work beanstalkd --sleep=10 --daemon --quiet --tries=3 --$ queue="production"
+$ stdout_logfile=/home/vagrant/captiv8.io/storage/logs/supervisord/captiv8.log
+$ redirect_stderr=true
+$ autostart=true
+$ autorestart=true
+$ user=vagrant
+```
+
+
+
 | prefix        | description                                                                                                      |
 | ------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `feature`     | most popular prefix, use it if you add some new functionality                                                    |
