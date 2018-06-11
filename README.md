@@ -5,10 +5,10 @@
  This repository contains the back-end part of the [Captiv8](https://captiv8.io/) interactive web
 application. It uses [`Laravel`](https://laravel.com/) as a main framework. 
  * [`Composer`](https://getcomposer.org/) is a tool for dependency management.
- * Redis as an advanced key-value store and Memcached as an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls.
+ * [`Redis`](https://redis.io/) as an advanced key-value store and Memcached as an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls.
  * Laravel migrations are like version control for database, allowing easily modify and share the application's database schema.
  * Laravel queues provide a unified API across a variety of different queue backends. Queues allow you to defer the processing of a time consuming task.
- * Project uses Centrifugo as a real-time messaging server. Centrifugo runs as separate service and keeps persistent Websocket or SockJS connections from application clients browsers. When some event happens you can broadcast it to all interested clients using Centrifugo API.
+ * Project uses [`Centrifugo`](https://github.com/centrifugal/centrifugo) as a real-time messaging server. Centrifugo runs as separate service and keeps persistent Websocket or SockJS connections from application clients browsers. When some event happens you can broadcast it to all interested clients using Centrifugo API.
 [Documentation](http://fzambia.gitbooks.io/centrifugal/content/) is a good start to get all details.
 
 ### Requirements
