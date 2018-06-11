@@ -3,7 +3,8 @@
 ## Getting Started
 
  This repository contains the back-end part of the [Captiv8](https://captiv8.io/) interactive web
-application. It uses [`Laravel`](https://laravel.com/) as a main framework. 
+application. It uses 
+ * [`Laravel`](https://laravel.com/) as a main PHP framework. 
  * [`Composer`](https://getcomposer.org/) is a tool for dependency management.
  * [`Redis`](https://redis.io/) as an advanced key-value store and Memcached as an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls.
  * Laravel migrations are like version control for database, allowing easily modify and share the application's database schema.
@@ -70,10 +71,25 @@ Queue workers list:
 | `production`    | -   | Events for insights                          |
 
 
+## Directory Structure
+
+`app/`: Contains the core code.
+`bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`config/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`database/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`public/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`resources/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`routes/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`storage/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`tests/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`vendor/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
+
 ### Directory Structure
 
 * The Root Directory
- * The app Directory - contains the core code
+ *  - 
   * The Console Directory
   * The Events Directory
   * The Exceptions Directory
@@ -83,7 +99,7 @@ Queue workers list:
   * The Mail Directory
   * The Notifications Directory
   * The Providers Directory
-* The bootstrap Directory - contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files
+* The bootstrap Directory - 
 * The config Directory
 * The database Directory
 * The public Directory
