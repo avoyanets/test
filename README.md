@@ -99,22 +99,22 @@ Queue workers list:
 ### Directory Structure
 
 * The Root Directory
- **  The App Directory
-  *** The Console Directory
-  **** The Events Directory
-  * The Exceptions Directory
-  * The Http Directory
-  * The Jobs Directory
-  * The Listeners Directory
-  * The Mail Directory
-  * The Notifications Directory
-  * The Providers Directory
-* The bootstrap Directory
-* The config Directory
-* The database Directory
-* The public Directory
-* The resources Directory
-* The routes Directory
-* The storage Directory
-* The tests Directory
-* The vendor Directory
+ * The App Directory
+   * The Console Directory
+   * The Events Directory
+   * The Exceptions Directory
+   * The Http Directory
+   * The Jobs Directory
+   * The Listeners Directory
+   * The Mail Directory
+   * The Notifications Directory
+   * The Providers Directory
+ * The bootstrap Directory
+ * The config Directory
+ * The database Directory
+ * The public Directory
+ * The resources Directory
+ * The routes Directory
+ * The storage Directory
+ * The tests Directory 
+ * The vendor Directory
