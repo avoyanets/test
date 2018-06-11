@@ -51,10 +51,7 @@ Queue workers list:
 | `cio`     | - | `Features`                 |
 | `digest`      | - | `Bug Fixes`                |
 | `es`     | - | `Performance Improvements` |
-| `es_calc`    | php artisan discovery_es_index:send
- 	{--ids= : inf user ids }
-	{--m= : mode }
-	{--new_data= : all inf users job mode } | -                          |
+| `es_calc`    | php artisan discovery_es_index:send | -                          |
 | `fb_main`   | -   | -                          |
 | `g_c`     | -   | -                          |
 | `mp_default` | -   | -                          |
