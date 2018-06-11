@@ -74,22 +74,32 @@ Queue workers list:
 ## Directory Structure
 
 `app/`: Contains the core code.
+
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `config/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `database/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `public/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `resources/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `routes/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `storage/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `tests/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+
 `vendor/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
 
 
 ### Directory Structure
 
 * The Root Directory
- *  - 
+ *  The App Directory
   * The Console Directory
   * The Events Directory
   * The Exceptions Directory
@@ -99,7 +109,7 @@ Queue workers list:
   * The Mail Directory
   * The Notifications Directory
   * The Providers Directory
-* The bootstrap Directory - 
+* The bootstrap Directory
 * The config Directory
 * The database Directory
 * The public Directory
