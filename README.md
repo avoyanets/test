@@ -75,46 +75,33 @@ Queue workers list:
 
 `app/`: Contains the core code.
 
+  The most significant directories into `app/` 
+   * The Console Directory - console tasks
+   * The Helpers Directory - useful functions
+   * The Exceptions Directory
+   * The Http Directory - Controllers, Middlewares, Routes
+   * The Jobs Directory - All asynchronous tasks
+   * The Models Directory - Eloquent ORM models
+   * The Servises Directory - Various classes for business logic etc.
+   * The Sources Directory - Various classes for business logic etc.
+   * The Traits Directory - List of traits.
+   * The Validators Directory - Captiv8 custom validators.
+
 `bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
 
-`config/`: contains all of your application's configuration files.
-
-`bootstrap/`: contains the app.php file which bootstraps the framework. This directory also houses a cache directory which contains framework generated files.
+`config/`: contains all of application's configuration files.
 
 `database/`: contains database migrations, model factories, and seeds.
 
 `public/`: the entry point for most requests, also houses assets (js, css, image).
 
-`resources/`: houses all of your language files.
+`resources/`: houses all of language files.
 
 `storage/`: contains various auxiliary files.
 
-`tests/`: contains your automated tests.
-
-`tests/`: contains your automated tests.
+`tests/`: contains automated tests.
 
 `vendor/`: contains composer dependencies.
 
 
-### Directory Structure
 
-* The Root Directory
- * The App Directory
-   * The Console Directory
-   * The Events Directory
-   * The Exceptions Directory
-   * The Http Directory
-   * The Jobs Directory
-   * The Listeners Directory
-   * The Mail Directory
-   * The Notifications Directory
-   * The Providers Directory
- * The bootstrap Directory
- * The config Directory
- * The database Directory
- * The public Directory
- * The resources Directory
- * The routes Directory
- * The storage Directory
- * The tests Directory 
- * The vendor Directory
