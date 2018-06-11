@@ -47,18 +47,18 @@ Queue workers list:
 
 | queue prefix       | How to start   | Description          |
 | ---------- | ------------- | -------------------------- |
-| `ac_tokens_check`    | php artisan access_token:check | -                          |
-| `cio`     | - | `Features`                 |
-| `digest`      | - | `Bug Fixes`                |
-| `es`     | - | `Performance Improvements` |
-| `es_calc`    | php artisan discovery_es_index:send | -                          |
+| `ac_tokens_check`    | php artisan access_token:check | Validate access tokens                         |
+| `cio`     | - | Events for customer.io                |
+| `digest`      | - | -                |
+| `es`     | - | Events for ElasticSearch |
+| `es_calc`    | php artisan discovery_es_index:send | Data calculation for ElasticSearch                          |
 | `fb_main`   | -   | -                          |
-| `g_c`     | -   | -                          |
-| `mp_default` | -   | -                          |
-| `mp_inf_update_main	`     | php artisan marketplace:start   | -                          |
-| `mp_post_update`    |  php artisan marketplace_post:start   | -                          |
-| `post_monitor`     | php artisan post_monitor:start   | -                          |
-| `production`    | -   | -                          |
+| `g_c`     | -   | Project garbage collector                          |
+| `mp_default` | -   | Events for discovery                          |
+| `mp_inf_update_main	`     | php artisan marketplace:start   | Calculation profiles for discovery                          |
+| `mp_post_update`    |  php artisan marketplace_post:start   | Calculation posts for discovery                           |
+| `post_monitor`     | php artisan post_monitor:start   | Start collect data for auto campaigns                          |
+| `production`    | -   | Events for insights                          |
 
 
 Centrifugo is a real-time messaging server. Version 1.7.9 (https://github.com/centrifugal/centrifugo)
