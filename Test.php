@@ -19,7 +19,7 @@ class Test
 
     public function getTest()
     {
-        echo 11;
+
     }
     
     public function setTest() {
